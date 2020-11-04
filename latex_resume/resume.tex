@@ -1,0 +1,151 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+% Awesome CV LaTeX Template
+%
+% This template has been downloaded from:
+% https://github.com/posquit0/Awesome-CV
+%
+% Author:
+% Claud D. Park <posquit0.bj@gmail.com>
+% http://www.posquit0.com
+%
+% Template license:
+% CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
+%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Configuration
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Themes: Awesome-CV
+\documentclass[]{awesome-cv}
+\usepackage{textcomp}
+%%% Override a directory location for fonts(default: 'fonts/')
+\fontdir[fonts/]
+
+%%% Configure a directory location for sections
+\newcommand*{\sectiondir}{resume/}
+
+%%% Override color
+% Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
+%                 awesome-nephritis, awesome-concrete, awesome-darknight
+%% Color for highlight
+% Define your custom color if you don't like awesome colors
+\colorlet{awesome}{awesome-red}
+%\definecolor{awesome}{HTML}{CA63A8}
+%% Colors for text
+%\definecolor{darktext}{HTML}{414141}
+%\definecolor{text}{HTML}{414141}
+%\definecolor{graytext}{HTML}{414141}
+%\definecolor{lighttext}{HTML}{414141}
+
+%%% Override a separator for social informations in header(default: ' | ')
+%\headersocialsep[\quad\textbar\quad]
+    \begin{document}
+    
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Profile
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{center}
+	\headerfirstnamestyle{Anirudh} \headerlastnamestyle{Iyer} \\
+	\vspace{2mm}
+	{\faEnvelope\ a24iyer@uwaterloo.ca} | {\faMobile\ (905) 616-1772} | {\faMapMarker\ Waterloo, ON} | {\faLink\ anirudhi.github.io}
+\end{center}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Education
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\cvsection{Education}
+\begin{cventries}
+	\cventry
+	{BCS in Computer Science}
+	{University of Waterloo}
+	{Waterloo, ON}
+	{Sep 2016 – Expected Apr 2021}
+	{}
+\end{cventries}
+
+\vspace{-2mm}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Experience
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\cvsection{Work Experience}
+\begin{cventries}
+	\cventry
+	{SOFTWARE ENGINEERING INTERN}
+	{Paravision}
+	{San Francisco, CA (Remote)}
+	{May 2020 – Aug 2020}
+	{\begin{cvitems}
+		\item {Improved inference time by 20\% in a high performance face recognition SDK by converting TensorRT engines to ONNX.}
+		\item {Developed a system to compile and distribute releases at scale for Paravision’s primary C++ SDK with CircleCI.}
+		\item {Reduced GPU utilization by 15\% in real time streaming app by detecting unused frames and implementing NMS.}
+		\item {Created production ready, multi stage Docker images to use for Computer Vision deployment at scale.}
+		\end{cvitems}}
+	\cventry
+	{SOFTWARE ENGINEERING INTERN}
+	{SelfMade}
+	{New York, NY}
+	{May 2019 – Aug 2019}
+	{\begin{cvitems}
+		\item {Created a referral system and targeted onboarding to increase user aquisition for SelfMade Collabs by 400\%.}
+		\item {Built REST APIs in Meteor/Node.js to handle multi-user chat, Instagram giveaways and several other collaboration tools.}
+		\item {Developed components in React/Redux for user profile creation and brand filtering.}
+		\item {Optimized API worker instances on EC2 to handle over 200\% more concurrent jobs from \textgreater{}50 SQS queues.}
+		\end{cvitems}}
+	\cventry
+	{SOFTWARE ENGINEERING INTERN}
+	{Shopify}
+	{Ottawa, ON}
+	{Sep 2018 – Dec 2018}
+	{\begin{cvitems}
+		\item {Migrated the Shopify Logistics admin platform from Ruby on Rails to a GraphQL, React.js/Typescript stack.}
+		\item {Implemented a new refunds flow in React that could handle orders with \textgreater{}1000 line items and multiple shipping locations.}
+		\item {Optimized refund query algorithm to filter out stale data, reducing data sent to the web client by 30\%.}
+		\item {Architected GraphQL APIs and client interfaces to allow the editing of orders, the most requested feature in Shopify.}
+		\end{cvitems}}
+	\cventry
+	{WEB DEVELOPMENT INTERN}
+	{Mani Wonders}
+	{Toronto, ON}
+	{Jan 2018 – Apr 2018}
+	{\begin{cvitems}
+		\item {Refactored their primary ecommerce portal resulting in 12x faster load times and an 80\% reduction in redundant data being loaded.}
+		\item {Introduced version control management and drastically sped up developer productivity by setting up a CI pipeline.}
+		\end{cvitems}}
+	\cventry
+	{3D DESIGN AND FIRMWARE DEVELOPER}
+	{Inksmith}
+	{Kitchener, ON}
+	{May 2017 – Aug 2017}
+	{\begin{cvitems}
+		\item {Developed an extensible Arduino based robotics framework consisting of low cost, 3D printed parts for educational use.}
+		\item {Designed a variety of CAD models for various client needs, with optimizations for additive manufacturing.}
+		\end{cvitems}}
+	\cventry
+	{HARDWARE AND FIRMWARE DEVELOPER}
+	{Edgebotix}
+	{Singapore}
+	{Feb 2016 – Aug 2016}
+	{\begin{cvitems}
+		\item {Developed EBot 2.0 from design to delivery within a 3 month time frame, while reducing cost by 80\%}
+		\item {Designed the PCB and firmware for the robot on the TI-CC3200 platform using embedded-C.}
+		\end{cvitems}}
+\end{cventries}
+\cvsection{Skills}
+\begin{cventries}
+	\cventry
+	{}
+	{\def\arraystretch{1.15}{\begin{tabular}{ l l }
+		Languages:  & {\skill{ C++, Python, Java, Javascript ES6, Golang, PHP, Lisp, Bash, C}} \\
+		Technologies:  & {\skill{ React, Node, Docker, MongoDB, Postgres, CircleCI, TensorRT, Redis, gRPC/Protobuf, Meteor, AWS, Enzyme}} \\
+		\end{tabular}}}
+	{}
+	{}
+	{}
+\end{cventries}
+
+\vspace{-7mm}
+
+
+\ 
+\end{document}
